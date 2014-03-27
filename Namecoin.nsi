@@ -51,7 +51,7 @@ Section "Namecoin" Section1
 	CreateDirectory "$SMPROGRAMS\Namecoin"
 	CreateShortCut "$SMPROGRAMS\Namecoin\Namecoin.lnk" "$INSTDIR\namecoin-qt.exe"
 	CreateShortCut "$SMPROGRAMS\Namecoin\Uninstall.lnk" "$INSTDIR\uninstall.exe"
-	CreateShortCut "$SMSTARTUP\Namecoin.lnk" "$INSTDIR\namecoin-qt.exe" "-min"
+	; CreateShortCut "$SMSTARTUP\Namecoin.lnk" "$INSTDIR\namecoin-qt.exe" "-min"
 
 	WriteRegStr HKCU "Software\Namecoin\Namecoin-Qt" "fMinimizeToTray" "true"
 	WriteRegStr HKCU "Software\Namecoin\Namecoin-Qt" "fMinimizeOnClose" "true"
